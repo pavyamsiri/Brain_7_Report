@@ -72,3 +72,7 @@ This notebook calculates the accuracy of the models both in a streaming context 
 ## Benchmark Notebook
 
 This notebook performs a series of benchmarks on the classifier models.
+
+## Saver
+
+The script `saver.py` was used to record SpikerBox data (see its help for more details on its usage).
