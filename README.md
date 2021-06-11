@@ -4,12 +4,21 @@ PHYS3888 Brain_7's Report code and notebook repository.
 
 ## Installation
 
-All the libraries used are located in the requirements.txt and requirements_no_versions.txt files. They can installed by calling pip install -r requirements.txt.
+All the libraries used are located in the requirements.txt and requirements_no_versions.txt files. They can be installed by calling pip install -r requirements.txt (there might errors with the yaml module).
 If using Windows the install.ps1 script can be used to create a new conda environment to install the libraries into. The uninstall.ps1 script can then be used to delete the environment. Also if using Windows an PyInstaller exe was also packaged in the submission along with the necessary folders to be able to run the game without having to install all the python libraries (it does take a while to load).
 
 ## Space Run
 
 All the code is located in the SpaceRun folder. It can be run with the default settings determined by the configuration files by running python `main.py`.
+You play as a the white spaceship at the bottom of the screen which you can move using the left and right arrow keys. Your goal is to survive for as long as possible avoiding the red obstacles ![obstacle](SpaceRun/assets/obstacle.png) while collecting the blue energy cubes ![energy](SpaceRun/assets/energy.png).
+The bottom right bar is your health and you lose the game when it reaches zero. The bottom left has a stop/go ![go](SpaceRun/assets/go.png) ![stop](SpaceRun/assets/stop.png) sign that indicates whether you are allowed to move when using the SpikerBox controls (SpikerStream, ArrayStream and WAVStream). The top left shows the frame rate and the top right shows the current score. When using SpikerBox controls a snapshot of the signal at the time of classification will be displayed on the right panel. The left panel will show the last control activated.
+
+*Controls*:
+
+* left/right arrow keys to move left/right. The game uses a toroidal geometry so moving left at the leftmost lane will move you to the rightmost lane and vice versa.
+* F10 toggles keyboard and SpikerBox controls.
+* F9 toggles display between frame rate (frames per second) and frame time (milliseconds per frame).
+* F8 swaps left and right inputs meaning pressing left will move you right and vice versa.
 
 ### Configuration files
 
@@ -55,7 +64,6 @@ spiker_box.srconfig contains many parameters relevant to how the SpikerBox perfo
     * positive_amplitude = positive amplitude minimum threshold
     * negative_amplitude = negative amplitude minimum threshold
     * spacing = maximum spacing between the peak and trough of the downsampled signal. As a fraction of the signal length.
-
 
 ## Training Models
 
