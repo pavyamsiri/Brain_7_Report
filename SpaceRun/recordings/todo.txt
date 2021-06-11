@@ -1,0 +1,6 @@
+Check left1-5 and right1-5 and lrl1 and rlr1 for revered left and right.
+
+
+def classifier(array):
+    
+    return left or right or noise

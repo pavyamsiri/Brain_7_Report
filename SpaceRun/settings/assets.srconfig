@@ -1,0 +1,13 @@
+---
+player: assets/player.png
+obstacle: assets/obstacle.png
+energy: assets/energy.png
+icon: assets/icon.png
+
+health_bar:
+  filled: assets/filled_bar.png
+  unfilled: assets/unfilled_bar.png
+
+move_sign:
+  go: assets/go.png
+  stop: assets/stop.png

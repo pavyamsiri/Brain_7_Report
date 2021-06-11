@@ -1,0 +1,3 @@
+right,	2.7
+left,	4.8
+right,	7.0

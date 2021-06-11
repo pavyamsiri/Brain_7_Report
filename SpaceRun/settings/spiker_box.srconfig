@@ -1,0 +1,30 @@
+---
+buffer_time: 1.46166449
+update_factor: 0.0999678179
+wait_time: 8.3719264e-05
+num_samples: 106
+quality_factor: 1.01674385
+
+
+stream:
+  stream_type: ARR
+  stream_file: "recordings/test.npy"
+  spiker_stream:
+    port_name: "/dev/ttyUSB0"
+
+
+classifier:
+  model_type: RFC
+  KNN:
+    file_path: models/KNN.joblib
+  RFC:
+    file_path: models/RFC.joblib
+  SVC:
+    file_path: models/SVC.joblib
+  MSC:
+    event_threshold: 100.916073
+    positive_amplitude: 14.9737741
+    negative_amplitude: 14.8056705
+    spacing: 0.205848771
+  USC:
+    event_threshold: 100.916073

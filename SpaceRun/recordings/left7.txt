@@ -1,0 +1,4 @@
+left,	0.8
+left,	2.5
+left,	4.0
+left,	5.5

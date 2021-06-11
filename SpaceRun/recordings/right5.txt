@@ -1,0 +1,3 @@
+right,	2.0
+right,	3.8
+right,	5.9

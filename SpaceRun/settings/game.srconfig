@@ -1,0 +1,10 @@
+---
+player:
+  hp: 5
+  max_hp: 5
+
+enemy: 
+  hp: 1
+  spawn_time: 2.25
+  speed: 0.05
+  score_gain: 100
